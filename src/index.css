@@ -2,6 +2,13 @@
 
 /* base styles */
 
+:root{
+  --yellow: #feb60a;
+  --red: #ff0062;
+  --blue: #00dbf9;
+  --violet: #da00f7;
+}
+
 * {
   margin: 0;
   font-family: "Quicksand";
@@ -59,4 +66,61 @@
   color: #f1356d;
   margin-bottom: 8px;
 
+}
+
+/* loading */
+.container > div{
+  animation: bounce 1.5s 0.5s linear infinite;
+  border-radius: 100%;
+  margin: 2vw;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yellow{
+  background-color: var(--yellow);
+  width: 1.5vw;
+  height: 1.5vw;
+}
+
+.red{
+  background-color: var(--red);
+  animation-delay: 1.2s;
+  width: 2vw;
+  height: 2vw;
+    
+}
+
+.blue{
+  background-color: var(--blue);
+  animation-delay: 1.4s;
+  width: 3vw;
+  height: 3vw;
+  
+}
+
+.violet{
+  background-color: var(--violet);
+  animation-delay: 1.5s;
+  width: 3.5vw;
+  height: 3.5vw;
+}
+
+@keyframes bounce {
+  0%, 50%, 100% {
+    transform: scale(1);
+    filter: blur(0px);
+  }
+  25% {
+    transform: scale(0.6);
+    filter: blur(3px);
+  }
+  75% {
+    filter: blur(5px);
+    transform: scale(2);
+  }
 }

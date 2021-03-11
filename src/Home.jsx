@@ -1,30 +1,27 @@
 import { useState, useEffect } from "react";
 import BlogList from "./BlogList";
+import Loading from './Loading'
 
 const Home = () => {
-  const [blogs, setBlogs] = useState([
-    { title: "My new website", body: "lorem ipsum...", author: "mario", id: 1 },
-    { title: "Welcome party!", body: "lorem ipsum...", author: "yoshi", id: 2 },
-    {
-      title: "Web dev top tips",
-      body: "lorem ipsum...",
-      author: "mario",
-      id: 3,
-    },
-  ]);
+  const [blogs, setBlogs] = useState(null);
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch("http://localhost:8000/blogs")
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setBlogs(data);
-      });
+    setTimeout(() =>{
+      fetch("http://localhost:8000/blogs")
+    .then((res) => {
+      return res.json();
+    })
+    .then((data) => {
+      setBlogs(data);
+      setLoading(false)
+    })
+    }, 7000);
   }, []);
 
   return (
     <div className="home">
+      {loading && <Loading/>}
     {blogs && <BlogList blogs={blogs} title="All Blogs!" />}
     </div>
   );
