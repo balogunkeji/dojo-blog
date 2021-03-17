@@ -124,3 +124,6 @@
     transform: scale(2);
   }
 }
+.blog-preview a{
+text-decoration: none;
+}
