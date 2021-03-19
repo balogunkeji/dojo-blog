@@ -27,3 +27,7 @@ yarn-debug.log*
 yarn-error.log*
 
 /.vscode
+/static
+asset-manifest.json
+favicon.ico
+logo192.png
