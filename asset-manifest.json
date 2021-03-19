@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/dojo-blog/static/css/main.45b86316.chunk.css",
+    "main.js": "/dojo-blog/static/js/main.dad51e2a.chunk.js",
+    "main.js.map": "/dojo-blog/static/js/main.dad51e2a.chunk.js.map",
+    "runtime-main.js": "/dojo-blog/static/js/runtime-main.f13d995e.js",
+    "runtime-main.js.map": "/dojo-blog/static/js/runtime-main.f13d995e.js.map",
+    "static/js/2.d9420976.chunk.js": "/dojo-blog/static/js/2.d9420976.chunk.js",
+    "static/js/2.d9420976.chunk.js.map": "/dojo-blog/static/js/2.d9420976.chunk.js.map",
+    "index.html": "/dojo-blog/index.html",
+    "static/css/main.45b86316.chunk.css.map": "/dojo-blog/static/css/main.45b86316.chunk.css.map",
+    "static/js/2.d9420976.chunk.js.LICENSE.txt": "/dojo-blog/static/js/2.d9420976.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f13d995e.js",
+    "static/js/2.d9420976.chunk.js",
+    "static/css/main.45b86316.chunk.css",
+    "static/js/main.dad51e2a.chunk.js"
+  ]
+}
