@@ -1,9 +1,9 @@
 
 
 {
-  "homepage": "http://balogunkeji.github.io/dojo-blog",
   "name": "dojo-blog",
   "version": "0.1.0",
+  "homepage": "https://balogunkeji.github.io/dojo-blog",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d build"
     
   },
   "eslintConfig": {
